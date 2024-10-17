@@ -1,0 +1,357 @@
+
+> testcafe-bug-reproduction@1.0.0 test
+> export DEBUG=testcafe:*,hammerhead:* && testcafe chrome tests/example.test.js
+
+2024-10-17T06:09:13.779Z testcafe:cli 
+    [
+      '~/.nvm/versions/node/v20.17.0/bin/node',
+      '~/tmp/testcafe-bug-reproduction/node_modules/testcafe/lib/cli',
+      'chrome',
+      'tests/example.test.js'
+    ]
+
+2024-10-17T06:09:13.783Z testcafe:cli 
+    {
+      clientScripts: [],
+      v8Flags: undefined,
+      listBrowsers: false,
+      browsers: [
+        'chrome'
+      ],
+      src: [
+        'tests/example.test.js'
+      ],
+      filter: undefined,
+      screenshots: {},
+      reporter: []
+    }
+
+2024-10-17T06:09:13.783Z testcafe:version 3.6.2
+2024-10-17T06:09:13.784Z testcafe:configuration Unable to find the "~/tmp/testcafe-bug-reproduction/.testcaferc.js" configuration file. Error details:
+
+Error: ENOENT: no such file or directory, stat '~/tmp/testcafe-bug-reproduction/.testcaferc.js'
+2024-10-17T06:09:13.784Z testcafe:configuration Unable to find the "~/tmp/testcafe-bug-reproduction/.testcaferc.json" configuration file. Error details:
+
+Error: ENOENT: no such file or directory, stat '~/tmp/testcafe-bug-reproduction/.testcaferc.json'
+2024-10-17T06:09:13.784Z testcafe:configuration Unable to find the "~/tmp/testcafe-bug-reproduction/.testcaferc.cjs" configuration file. Error details:
+
+Error: ENOENT: no such file or directory, stat '~/tmp/testcafe-bug-reproduction/.testcaferc.cjs'
+2024-10-17T06:09:14.142Z testcafe:reporter begin dispatchToPlugin method: init
+[ '3.6.2' ]
+2024-10-17T06:09:14.142Z testcafe:reporter end dispatchToPlugin method: init
+2024-10-17T06:09:14.144Z testcafe:runner 
+    TestCafeConfiguration {
+      _options: {
+        developmentMode: Option {
+          name: 'developmentMode',
+          value: false,
+          source: 'Configuration'
+        },
+        isCli: Option {
+          name: 'isCli',
+          value: true,
+          source: 'Input'
+        },
+        hostname: Option {
+          name: 'hostname',
+          value: undefined,
+          source: 'Input'
+        },
+        port1: Option {
+          name: 'port1',
+          value: 44023,
+          source: 'Input'
+        },
+        port2: Option {
+          name: 'port2',
+          value: 43049,
+          source: 'Input'
+        },
+        ssl: Option {
+          name: 'ssl',
+          value: undefined,
+          source: 'Input'
+        },
+        retryTestPages: Option {
+          name: 'retryTestPages',
+          value: false,
+          source: 'Configuration'
+        },
+        cache: Option {
+          name: 'cache',
+          value: undefined,
+          source: 'Input'
+        },
+        configFile: Option {
+          name: 'configFile',
+          value: undefined,
+          source: 'Input'
+        },
+        disableHttp2: Option {
+          name: 'disableHttp2',
+          value: false,
+          source: 'Configuration'
+        },
+        v8Flags: Option {
+          name: 'v8Flags',
+          value: undefined,
+          source: 'Input'
+        },
+        disableCrossDomain: Option {
+          name: 'disableCrossDomain',
+          value: false,
+          source: 'Configuration'
+        },
+        esm: Option {
+          name: 'esm',
+          value: undefined,
+          source: 'Input'
+        },
+        proxy: Option {
+          name: 'proxy',
+          value: undefined,
+          source: 'Input'
+        },
+        proxyBypass: Option {
+          name: 'proxyBypass',
+          value: undefined,
+          source: 'Input'
+        },
+        src: Option {
+          name: 'src',
+          value: [Array],
+          source: 'Input'
+        },
+        tsConfigPath: Option {
+          name: 'tsConfigPath',
+          value: undefined,
+          source: 'Input'
+        },
+        browsers: Option {
+          name: 'browsers',
+          value: [Array],
+          source: 'Input'
+        },
+        reporter: Option {
+          name: 'reporter',
+          value: undefined,
+          source: 'Input'
+        },
+        concurrency: Option {
+          name: 'concurrency',
+          value: 1,
+          source: 'Configuration'
+        },
+        filter: Option {
+          name: 'filter',
+          value: undefined,
+          source: 'Input'
+        },
+        videoPath: Option {
+          name: 'videoPath',
+          value: undefined,
+          source: 'Input'
+        },
+        videoOptions: Option {
+          name: 'videoOptions',
+          value: undefined,
+          source: 'Input'
+        },
+        videoEncodingOptions: Option {
+          name: 'videoEncodingOptions',
+          value: undefined,
+          source: 'Input'
+        },
+        screenshots: Option {
+          name: 'screenshots',
+          value: [Object],
+          source: 'Input'
+        },
+        appCommand: Option {
+          name: 'appCommand',
+          value: undefined,
+          source: 'Input'
+        },
+        appInitDelay: Option {
+          name: 'appInitDelay',
+          value: 1000,
+          source: 'Configuration'
+        },
+        clientScripts: Option {
+          name: 'clientScripts',
+          value: undefined,
+          source: 'Input'
+        },
+        compilerOptions: Option {
+          name: 'compilerOptions',
+          value: [Object],
+          source: 'Input'
+        },
+        debugMode: Option {
+          name: 'debugMode',
+          value: false,
+          source: 'Configuration'
+        },
+        debugOnFail: Option {
+          name: 'debugOnFail',
+          value: false,
+          source: 'Configuration'
+        },
+        skipUncaughtErrors: Option {
+          name: 'skipUncaughtErrors',
+          value: false,
+          source: 'Configuration'
+        },
+        stopOnFirstFail: Option {
+          name: 'stopOnFirstFail',
+          value: false,
+          source: 'Configuration'
+        },
+        takeScreenshotsOnFails: Option {
+          name: 'takeScreenshotsOnFails',
+          value: false,
+          source: 'Configuration'
+        },
+        disablePageCaching: Option {
+          name: 'disablePageCaching',
+          value: false,
+          source: 'Configuration'
+        },
+        disablePageReloads: Option {
+          name: 'disablePageReloads',
+          value: false,
+          source: 'Configuration'
+        },
+        disableScreenshots: Option {
+          name: 'disableScreenshots',
+          value: false,
+          source: 'Configuration'
+        },
+        disableMultipleWindows: Option {
+          name: 'disableMultipleWindows',
+          value: false,
+          source: 'Configuration'
+        },
+        selectorTimeout: Option {
+          name: 'selectorTimeout',
+          value: 10000,
+          source: 'Configuration'
+        },
+        assertionTimeout: Option {
+          name: 'assertionTimeout',
+          value: 3000,
+          source: 'Configuration'
+        },
+        pageLoadTimeout: Option {
+          name: 'pageLoadTimeout',
+          value: 3000,
+          source: 'Configuration'
+        },
+        speed: Option {
+          name: 'speed',
+          value: 1,
+          source: 'Configuration'
+        },
+        disableNativeAutomation: Option {
+          name: 'disableNativeAutomation',
+          value: false,
+          source: 'Configuration'
+        },
+        experimentalMultipleWindows: Option {
+          name: 'experimentalMultipleWindows',
+          value: false,
+          source: 'Configuration'
+        },
+        skipJsErrors: Option {
+          name: 'skipJsErrors',
+          value: false,
+          source: 'Configuration'
+        }
+      },
+      _defaultPaths: [
+        '~/tmp/testcafe-bug-reproduction/.testcaferc.js',
+        '~/tmp/testcafe-bug-reproduction/.testcaferc.json',
+        '~/tmp/testcafe-bug-reproduction/.testcaferc.cjs'
+      ],
+      _filePath: '~/tmp/testcafe-bug-reproduction/.testcaferc.js',
+      _overriddenOptions: [],
+      _isExplicitConfig: false
+    }
+
+2024-10-17T06:09:14.153Z testcafe:hammerhead:proxy:router register route GET /hammerhead.js
+2024-10-17T06:09:14.157Z testcafe:hammerhead:proxy:router register route GET /transport-worker.js
+2024-10-17T06:09:14.157Z testcafe:hammerhead:proxy:router register route GET /worker-hammerhead.js
+2024-10-17T06:09:14.158Z testcafe:hammerhead:proxy:router register route GET /messaging
+2024-10-17T06:09:14.158Z testcafe:hammerhead:proxy:router register route POST /messaging
+2024-10-17T06:09:14.158Z testcafe:hammerhead:proxy:router register route OPTIONS /messaging
+2024-10-17T06:09:14.158Z testcafe:hammerhead:proxy:router register route GET /task.js
+2024-10-17T06:09:14.158Z testcafe:hammerhead:proxy:router register route GET /iframe-task.js
+2024-10-17T06:09:14.160Z testcafe:hammerhead:proxy:router register route GET /browser/connect/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/heartbeat/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/idle/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/idle-forced/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/status/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/status-done/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/init-script/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/init-script/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/active-window-id/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/active-window-id/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/ensure-window-in-native-automation/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/close-window/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/open-file-protocol/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/dispatch-native-automation-event/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /parse-selector/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route POST /browser/dispatch-native-automation-event-sequence/{id}
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/connect
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /browser/connect/
+2024-10-17T06:09:14.161Z testcafe:hammerhead:proxy:router register route GET /service-worker.js
+2024-10-17T06:09:14.162Z testcafe:hammerhead:proxy:router register route GET /browser/assets/index.js
+2024-10-17T06:09:14.162Z testcafe:hammerhead:proxy:router register route GET /browser/assets/styles.css
+2024-10-17T06:09:14.162Z testcafe:hammerhead:proxy:router register route GET /browser/assets/logo.svg
+2024-10-17T06:09:14.162Z testcafe:hammerhead:proxy:router register route GET /about:error
+2024-10-17T06:09:14.162Z testcafe:hammerhead:proxy:router register route GET /testcafe-core.js
+2024-10-17T06:09:14.162Z testcafe:hammerhead:proxy:router register route GET /testcafe-driver.js
+2024-10-17T06:09:14.163Z testcafe:hammerhead:proxy:router register route GET /testcafe-legacy-runner.js
+2024-10-17T06:09:14.163Z testcafe:hammerhead:proxy:router register route GET /testcafe-automation.js
+2024-10-17T06:09:14.164Z testcafe:hammerhead:proxy:router register route GET /testcafe-ui.js
+2024-10-17T06:09:14.164Z testcafe:hammerhead:proxy:router register route GET /testcafe-ui-sprite.png
+2024-10-17T06:09:14.165Z testcafe:hammerhead:proxy:router register route GET /testcafe-ui-sprite.svg
+2024-10-17T06:09:14.165Z testcafe:hammerhead:proxy:router register route GET /favicon.ico
+2024-10-17T06:09:14.165Z testcafe:hammerhead:proxy:router register route GET /testcafe-ui-styles.css
+2024-10-17T06:09:14.182Z testcafe:utils:temp-directory Found temp directories: []
+2024-10-17T06:09:14.183Z testcafe:utils:temp-directory Temp directory path:  /tmp/testcafe/chrome-profile-517756O8rQiQYDMXQ
+2024-10-17T06:09:14.220Z testcafe:bootstrapper tests compilation took 39 ms
+2024-10-17T06:09:14.239Z testcafe:browser-tools:open '"/usr/bin/google-chrome-stable" --remote-debugging-port=34973 --user-data-dir=/tmp/testcafe/chrome-profile-517756O8rQiQYDMXQ --disable-popup-blocking --disable-infobars --disable-session-crashed-bubble --no-first-run --new-window --disable-background-networking --disable-ipc-flooding-protection --disable-background-timer-throttling --disable-backgrounding-occluded-windows --autoplay-policy=no-user-gesture-required "http://localhost:44023/browser/connect/zGpj5eI" 0<&- >/dev/null 2>&1 &'
+2024-10-17T06:09:14.671Z testcafe:browser:connection:zGpj5eI status changed to 'ready'
+2024-10-17T06:09:15.796Z testcafe:browser:provider:built-in:chrome:browser-client:zGpj5eI CDP method 'PageEnable' took 1.58 ms
+2024-10-17T06:09:15.798Z testcafe:native-automation starting
+2024-10-17T06:09:15.954Z testcafe:browser:connection:zGpj5eI Error: Unable to open the "chrome:" browser due to the following error:
+
+Error: WebSocket connection closed
+    at ~/tmp/testcafe-bug-reproduction/node_modules/chrome-remote-interface/lib/chrome.js:94:35
+    at Chrome._handleConnectionClose (~/tmp/testcafe-bug-reproduction/node_modules/chrome-remote-interface/lib/chrome.js:256:13)
+    at WebSocket.<anonymous> (~/tmp/testcafe-bug-reproduction/node_modules/chrome-remote-interface/lib/chrome.js:243:22)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.emit (node:domain:488:12)
+    at WebSocket.emitClose (~/tmp/testcafe-bug-reproduction/node_modules/ws/lib/websocket.js:246:10)
+    at Socket.socketOnClose (~/tmp/testcafe-bug-reproduction/node_modules/ws/lib/websocket.js:1150:15)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:488:12)
+    at TCP.<anonymous> (node:net:339:12)
+    at BrowserConnection._runBrowser (~/tmp/testcafe-bug-reproduction/node_modules/testcafe/src/browser/connection/index.ts:291:32)
+2024-10-17T06:09:15.954Z testcafe:browser:connection:zGpj5eI status changed to 'closing'
+ERROR Unable to open the "chrome:" browser due to the following error:
+
+Error: WebSocket connection closed
+    at ~/tmp/testcafe-bug-reproduction/node_modules/chrome-remote-interface/lib/chrome.js:94:35
+    at Chrome._handleConnectionClose (~/tmp/testcafe-bug-reproduction/node_modules/chrome-remote-interface/lib/chrome.js:256:13)
+    at WebSocket.<anonymous> (~/tmp/testcafe-bug-reproduction/node_modules/chrome-remote-interface/lib/chrome.js:243:22)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.emit (node:domain:488:12)
+    at WebSocket.emitClose (~/tmp/testcafe-bug-reproduction/node_modules/ws/lib/websocket.js:246:10)
+    at Socket.socketOnClose (~/tmp/testcafe-bug-reproduction/node_modules/ws/lib/websocket.js:1150:15)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:488:12)
+    at TCP.<anonymous> (node:net:339:12)
+
+Type "testcafe -h" for help.
